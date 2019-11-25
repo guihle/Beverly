@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 from googlesearch import search
-import requests, argparse, time, sys
+import requests, argparse
 
 parser = argparse.ArgumentParser(description='SQLi Finder')
 parser.add_argument('-p', type=str, help='Google dork (optional)')
@@ -28,7 +28,7 @@ for j in search(pes, tld="com", num=10, stop=40, pause=60):
         res = requests.get(j).content
         site = j + "'"
         res2 = requests.get(site).content
-        if j != site:
+        if res != res2:
             print(j, " - LIKELY INJECTABLE")
         else:
             print(j, " - Unlikely Injectable")
@@ -37,3 +37,4 @@ for j in search(pes, tld="com", num=10, stop=40, pause=60):
     except KeyboardInterrupt:
         print("\nCtrl+C Pressed\nQuitting.")
         quit()
+
