@@ -1,2 +1,3 @@
 Usage: ./beverly.py -p Google_dork(optional)
 Example: ./beverly.py -p "inurl:.php?cat="
+The Default dork is "inurl:view_items.php?id="
