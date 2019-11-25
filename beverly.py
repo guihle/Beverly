@@ -1,12 +1,23 @@
 #!/usr/bin/python3
 from googlesearch import search
-import requests, argparse
+import requests, argparse, time, sys
 
 parser = argparse.ArgumentParser(description='SQLi Finder')
 parser.add_argument('-p', type=str, help='Google dork (optional)')
 args = parser.parse_args()
 par = args.p
 
+print(" ____     ___ __ __    ___  ____   _      __ __     ")
+print("|    \   /  _]  |  |  /  _]|    \ | |    |  |  |    ")
+print("|  o  ) /  [_|  |  | /  [_ |  D  )| |    |  |  |    ")
+print("|     ||    _]  |  ||    _]|    / | |___ |  ~  |    ")
+print("|  O  ||   [_|  :  ||   [_ |    \ |     ||___, |    ")
+print("|     ||     |\   / |     ||  .  \|     ||     |    ")
+print("|_____||_____| \_/  |_____||__|\_||_____||____/     ")
+print("                                                    ")
+
+
+print("Scanning for Vulnerable Web Pages, please hold...")
 if not par:
     pes = "inurl:view_items.php?id="
 else:
