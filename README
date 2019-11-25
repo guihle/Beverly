@@ -1,3 +1,17 @@
+ ____     ___ __ __    ___  ____   _      __ __     
+|    \   /  _]  |  |  /  _]|    \ | |    |  |  |    
+|  o  ) /  [_|  |  | /  [_ |  D  )| |    |  |  |    
+|     ||    _]  |  ||    _]|    / | |___ |  ~  |    
+|  O  ||   [_|  :  ||   [_ |    \ |     ||___, |    
+|     ||     |\   / |     ||  .  \|     ||     |    
+|_____||_____| \_/  |_____||__|\_||_____||____/     
+                                                    
+
+
+Before using this tool, you need to run the following command:
+pip3 install google
+pip3 install requests
+
 Usage: ./beverly.py -p Google_dork(optional)
 Example: ./beverly.py -p "inurl:.php?cat="
 The Default dork is "inurl:view_items.php?id="
