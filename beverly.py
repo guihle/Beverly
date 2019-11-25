@@ -29,12 +29,11 @@ for j in search(pes, tld="com", num=10, stop=40, pause=60):
         site = j + "'"
         res2 = requests.get(site).content
         if res != res2:
-            print(j, " - LIKELY INJECTABLE")
+            print("\033[1;32;40m",j, " - LIKELY INJECTABLE")
         else:
-            print(j, " - Unlikely Injectable")
+            print("\033[1;31;40m",j, " - Unlikely Injectable")
     except requests.exceptions.RequestException:
         pass
     except KeyboardInterrupt:
         print("\nCtrl+C Pressed\nQuitting.")
         quit()
-
