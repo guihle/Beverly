@@ -7,6 +7,11 @@
 |_____||_____| \_/  |_____||__|\_||_____||____/     
                                                     
 
-Usage: ./beverly.py -p Google_dork(optional)
-Example: ./beverly.py -p "inurl:.php?cat="
-The Default dork is "inurl:view_items.php?id="
+SQLi Finder
+
+optional arguments:
+  -p P        Customized google Dork (optional),
+              default="inurl:view_items.php?id="
+  -n N        Results quantity(optional, default=10)
+  -r          Generate random list
+  -d          Use random dork
